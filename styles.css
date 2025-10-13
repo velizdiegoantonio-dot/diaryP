@@ -1,69 +1,103 @@
+/* Fuentes generales */
+body, input, button, textarea {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Fondo y color de texto general */
 body {
-    font-family:'Poppins',sans-serif;
-    background: linear-gradient(to bottom right,#fff6f6,#f0f9ff);
-    margin: 0;
-    padding: 0;
+  background-color: #f6f3fa; /* blanco lavanda */
+  color: #4b4453; /* gris oscuro */
+  margin: 0;
+  padding: 0;
 }
 
+/* Título principal */
 .titulo {
-    font-family: 'Handlee'cursive;
-    font-size: 2.2em;
-    color: #5a4fcf;
-    margin-bottom: 5px;
+  font-family: 'Handlee', cursive;
+  font-size: 2.8rem;
+  color: #7e57c2; /* morado pastel */
 }
 
+/* Subtítulo */
 .subtitulo {
-    font-size: 1em;
-    color: #888;
-    margin-top: 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: #9e8bc8; /* morado claro */
 }
 
-mian {
-    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-    background-color: #fffdfa;
-    border: 2px dashed#d8caff;
-}
-
-textarea {
-    resize: none;
-    background-color: #fcfaff;
-    font-family: 'Handlee',cursive;
-    font-size: 1em;
+/* Botón guardar */
+.boton-guardar {
+  background-color: #b39ddb; /* morado pastel claro */
+  color: white;
+  transition: background-color 0.3s ease;
 }
 
 .boton-guardar:hover {
-    background-color: #a29bfe !important;
+  background-color: #9575cd;
 }
 
-.entrada h4 {
-    font-family: 'Handlee',cursive;
-    font-size: 1.3em;
-}
-
+/* Botones eliminar */
 .boton-eliminar {
-    background-color: #ffb4b4;
-    color: #fff !important;
-    font-weight: bold;
-    margin-top: 8px;
-    transition: 0.3s;
+  background-color: #e1bee7; /* lavanda */
+  color: #5e35b1; /* morado oscuro */
+  transition: background-color 0.3s ease;
 }
 
 .boton-eliminar:hover {
-    background-color: #ff6b6b !important;
+  background-color: #7e57c2;
+  color: white;
 }
 
-@media (max-width:600px){
-    main{
-        margin: 12px;
-        padding: 20px;
-    }
+/* Botón mostrar/ocultar */
+.w3-button.w3-indigo {
+  background-color: #9575cd !important;
+  color: white !important;
+  transition: background-color 0.3s ease;
+}
 
-    .titulo {
-        font-size: 1.9em;
-    }
+.w3-button.w3-indigo:hover {
+  background-color: #7e57c2 !important;
+}
 
-    textarea, input {
+/* Inputs y textarea */
+input[type="text"], input[type="date"], textarea {
+  background-color: #f3e5f5; /* lavanda muy suave */
+  border-color: #b39ddb;
+  color: #4b4453;
+}
 
-        font-size: 0.95em;
-    }
+input[type="text"]:focus, input[type="date"]:focus, textarea:focus {
+  border-color: #7e57c2;
+  box-shadow: 0 0 8px #9575cd;
+  outline: none;
+}
+
+/* Card entradas */
+.entrada {
+  background-color: #ede7f6; /* lavanda suave */
+  border: 1px solid #b39ddb;
+}
+
+/* Header y footer */
+header, footer {
+  background-color: #ede7f6;
+}
+
+/* Footer texto */
+footer p {
+  color: #9e8bc8;
+}
+
+/* Botón cerrar sesión */
+.w3-button.w3-red {
+  background-color: #ce93d8 !important;
+  color: #4b4453 !important;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.w3-button.w3-red:hover {
+  background-color: #ab47bc !important;
+  color: white !important;
 }
