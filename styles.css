@@ -1,0 +1,69 @@
+body {
+    font-family:'Poppins',sans-serif;
+    background: linear-gradient(to bottom right,#fff6f6,#f0f9ff);
+    margin: 0;
+    padding: 0;
+}
+
+.titulo {
+    font-family: 'Handlee'cursive;
+    font-size: 2.2em;
+    color: #5a4fcf;
+    margin-bottom: 5px;
+}
+
+.subtitulo {
+    font-size: 1em;
+    color: #888;
+    margin-top: 0;
+}
+
+mian {
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    background-color: #fffdfa;
+    border: 2px dashed#d8caff;
+}
+
+textarea {
+    resize: none;
+    background-color: #fcfaff;
+    font-family: 'Handlee',cursive;
+    font-size: 1em;
+}
+
+.boton-guardar:hover {
+    background-color: #a29bfe !important;
+}
+
+.entrada h4 {
+    font-family: 'Handlee',cursive;
+    font-size: 1.3em;
+}
+
+.boton-eliminar {
+    background-color: #ffb4b4;
+    color: #fff !important;
+    font-weight: bold;
+    margin-top: 8px;
+    transition: 0.3s;
+}
+
+.boton-eliminar:hover {
+    background-color: #ff6b6b !important;
+}
+
+@media (max-width:600px){
+    main{
+        margin: 12px;
+        padding: 20px;
+    }
+
+    .titulo {
+        font-size: 1.9em;
+    }
+
+    textarea, input {
+
+        font-size: 0.95em;
+    }
+}

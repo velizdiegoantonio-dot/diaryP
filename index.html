@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pau's Diary</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2??family=Handlee&family=Poppins:wght@300;500&display=swap">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+<body class="w3-pale-blue">
+
+    <header class="w3-container w3-center w3-padding-32 w3-animate-opacity">
+        <h1 class="titulo">Pau's Diary</h1>
+        <p class="subtitulo">Little thoughts kept with love</p>
+    </header>
+
+    <main class="w3-content w3-card w3-round-large w3-white w3-padding24 w3-animate-opacity" style="max-width: 600px;">
+        <div class="w3-container">
+            <h3 class="w3-center w3-text-indigo">Nueva Entrada</h3>
+
+            <form id="diarioForm" class="w3-container">
+                <label class="w3-text-grey"><b>Titulo</b></label>
+                <input class="w3-input w3-border w3-round-large" type="text" id="titulo" placeholder="Ej: Una tarde perfecta...">
+
+                <label class="w3-text-grey"><b>Fecha</b></label>
+                <input class="w3-input w3-border w3-round-large" type="date" id="fecha">
+
+                <label class="w3-text-grey"><b>Escribe tu entrada</b></label>
+                <textarea class="w3-input w3-border w3-round-large" id="texto" rows="7" placeholder="Querido diario..."></textarea>
+
+                <button type="button" class="w3-button w3-round-large w3-block boton-guardar" onclick="guardarEntrada()">Guardar Entrada</button>
+            </form>
+        </div>
+
+        <hr class="w3-margin-top">
+
+        <div class="w3-container">
+            <h3 class="w3-center w3-text-indigo">Entradas Guardadas</h3>
+            <div id="notas" class="w3-margin-top"></div>
+        </div>
+    </main>
+
+    <footer class="w3-center w3-padding-16 w3-small w3-text-grey">
+        <p>Hecho con amor y paciencia por Diegoohav para Paau</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
