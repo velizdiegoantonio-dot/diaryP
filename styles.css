@@ -1,5 +1,5 @@
 /* Fuentes generales */
-body, input, button, textarea {
+body, input, button, textarea, select {
   font-family: 'Poppins', sans-serif;
 }
 
@@ -20,7 +20,6 @@ body {
 
 /* Subtítulo */
 .subtitulo {
-  font-family: 'Poppins', sans-serif;
   font-weight: 300;
   font-size: 1.2rem;
   color: #9e8bc8; /* morado claro */
@@ -60,14 +59,15 @@ body {
   background-color: #7e57c2 !important;
 }
 
-/* Inputs y textarea */
-input[type="text"], input[type="date"], textarea {
+/* Inputs, textarea y select */
+input[type="text"], input[type="date"], textarea, select {
   background-color: #f3e5f5; /* lavanda muy suave */
   border-color: #b39ddb;
   color: #4b4453;
+  padding: 8px;
 }
 
-input[type="text"]:focus, input[type="date"]:focus, textarea:focus {
+input[type="text"]:focus, input[type="date"]:focus, textarea:focus, select:focus {
   border-color: #7e57c2;
   box-shadow: 0 0 8px #9575cd;
   outline: none;
@@ -75,18 +75,21 @@ input[type="text"]:focus, input[type="date"]:focus, textarea:focus {
 
 /* Card entradas */
 .entrada {
-  background-color: #ede7f6; /* lavanda suave */
   border: 1px solid #b39ddb;
+  border-radius: 12px;
+  padding: 12px;
 }
 
 /* Header y footer */
 header, footer {
   background-color: #ede7f6;
+  padding: 16px;
 }
 
 /* Footer texto */
 footer p {
   color: #9e8bc8;
+  margin: 0;
 }
 
 /* Botón cerrar sesión */
@@ -100,4 +103,34 @@ footer p {
 .w3-button.w3-red:hover {
   background-color: #ab47bc !important;
   color: white !important;
+}
+
+/* Botones de PDF y mostrar/ocultar entradas */
+.w3-button.w3-purple {
+  background-color: #ba68c8 !important;
+  color: white !important;
+  transition: background-color 0.3s ease;
+}
+
+.w3-button.w3-purple:hover {
+  background-color: #9c27b0 !important;
+}
+
+/* Botón dentro de cada entrada */
+.entrada button {
+  margin-top: 8px;
+}
+
+/* Select de colores */
+select {
+  background-color: #f3e5f5;
+  border-color: #b39ddb;
+  color: #4b4453;
+  padding: 8px;
+}
+
+select:focus {
+  border-color: #7e57c2;
+  box-shadow: 0 0 8px #9575cd;
+  outline: none;
 }

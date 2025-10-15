@@ -10,7 +10,6 @@
 </head>
 <body class="w3-pale-blue">
 
-    <!-- Alerta personalizada -->
     <div id="alerta" class="w3-panel w3-pale-indigo w3-border w3-round-large w3-hide"
         style="position: fixed; top: 20px; right: 20px; max-width: 300px; z-index: 9999;"></div>
 
@@ -21,7 +20,6 @@
 
     <main class="w3-content w3-card w3-round-large w3-white w3-padding24 w3-animate-opacity" style="max-width: 600px;">
 
-        <!-- Login -->
         <div id="loginSection" class="w3-container">
             <h3 class="w3-center w3-text-indigo">Iniciar Sesión</h3>
             <form id="loginForm" class="w3-container" onsubmit="event.preventDefault(); iniciarSesion();">
@@ -33,36 +31,34 @@
             </form>
         </div>
 
-        <!-- Diario (privado) -->
         <div id="diarioSection" style="display:none;">
             <div class="w3-container w3-margin-bottom">
                 <button onclick="cerrarSesion()" class="w3-button w3-red w3-round-large w3-block w3-margin-bottom">Cerrar Sesión</button>
             </div>
 
             <div class="w3-container">
-                <h3 class="w3-center w3-text-indigo">Nueva Entrada</h3>
-                <form id="diarioForm" class="w3-container" onsubmit="event.preventDefault(); guardarEntrada();">
-                    <label class="w3-text-grey"><b>Titulo</b></label>
+                <h3 class="w3-center w3-text-indigo">Nueva Nota</h3>
+                <form id="diarioForm" class="w3-container" onsubmit="event.preventDefault(); guardarNota();">
+                    <label class="w3-text-grey"><b>Título</b></label>
                     <input class="w3-input w3-border w3-round-large" type="text" id="titulo" placeholder="Ej: Una tarde perfecta..." />
                     <label class="w3-text-grey"><b>Fecha</b></label>
                     <input class="w3-input w3-border w3-round-large" type="date" id="fecha" />
-                    <label class="w3-text-grey"><b>Escribe tu entrada</b></label>
+                    <label class="w3-text-grey"><b>Escribe tu nota</b></label>
                     <textarea class="w3-input w3-border w3-round-large" id="texto" rows="7" placeholder="Querido diario..."></textarea>
-                    <button type="submit" class="w3-button w3-round-large w3-block boton-guardar w3-indigo w3-margin-top">Guardar Entrada</button>
+
+                    <button type="submit" class="w3-button w3-round-large w3-block boton-guardar w3-indigo w3-margin-top">Guardar Nota</button>
                 </form>
             </div>
 
             <hr class="w3-margin-top" />
 
             <div class="w3-container">
-                <!-- Botón de descarga PDF -->
                 <button onclick="descargarPDF()" class="w3-button w3-purple w3-round-large w3-block w3-margin-bottom">
                     Descargar Diario en PDF
                 </button>
 
-                <!-- Mostrar/Ocultar entradas -->
                 <button onclick="toggleNotas()" class="w3-button w3-indigo w3-round-large w3-block w3-margin-bottom">
-                    Mostrar/Ocultar Entradas Guardadas
+                    Mostrar/Ocultar Notas Guardadas
                 </button>
 
                 <div id="notas" class="w3-margin-top" style="display: none;"></div>
@@ -75,7 +71,6 @@
         <p>Hecho con amor y paciencia por Diegoohav para Paau</p>
     </footer>
 
-    <!-- jsPDF para generar PDF -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="scripts.js"></script>
 </body>
